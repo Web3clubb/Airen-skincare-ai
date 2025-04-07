@@ -10,7 +10,7 @@ async function submitQuiz() {
   responseBox.innerHTML = "🧪 Thinking...";
 
   try {
-    const res = await fetch("https://YOUR-BACKEND-URL/chat", {
+    const res = await fetch("http://127.0.0.1:5000", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
