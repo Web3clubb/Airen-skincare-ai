@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlowUp AI - Your Skin, Perfected</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>✨ GlowUp AI ✨</h1>
+    <p class="subhead">Discover your perfect skincare routine in 60 seconds</p>
+
+    <div id="quiz">
+      <label>🧒 Your Age:
+        <input type="number" id="age" min="12" max="100" required />
+      </label>
+      <label>🌈 Skin Type:
+        <select id="skinType">
+          <option>Dry</option>
+          <option>Oily</option>
+          <option>Combination</option>
+          <option>Normal</option>
+          <option>Sensitive</option>
+        </select>
+      </label>
+      <label>🚨 Main Concern:
+        <select id="concern">
+          <option>Acne</option>
+          <option>Dark Spots</option>
+          <option>Wrinkles</option>
+          <option>Redness</option>
+          <option>Pores</option>
+        </select>
+      </label>
+      <label>💸 Budget:
+        <select id="budget">
+          <option>Under $25</option>
+          <option>$25-$50</option>
+          <option>$50-$100</option>
+          <option>Luxury</option>
+        </select>
+      </label>
+      <button onclick="submitQuiz()">Get My Plan 💖</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
